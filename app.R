@@ -1,6 +1,5 @@
 library(shiny)
 library(dplyr)
-library(ggplot2)
 library(ggiraph)
 # add description text
 ui <- fluidPage(
@@ -69,7 +68,6 @@ ui <- fluidPage(
   )
 )
 
-# Define server logic required to draw a histogram
 server <- function(input, output) {
   load("./data/ch.rdata")
   links_raw <- read.csv(
