@@ -1,6 +1,8 @@
 library(shiny)
-library(dplyr)
+library(ggplot2)
 library(ggiraph)
+library(dplyr)
+library(sf)
 # add description text
 ui <- fluidPage(
   tags$head(
@@ -31,14 +33,14 @@ ui <- fluidPage(
         padding-left: 220px;
         padding-top:20px;
         padding-bottom:20px;
-        margin-right:-100px;
-        padding-right:110px;
+        margin-right:-200px;
+        padding-right:210px;
         color: white;
         };'
       )
     )
   ),
-  titlePanel("Snapshots of old Switzerland"),
+  titlePanel(HTML("Snapshots Of Old<br/>Switzerland")),
   shinyWidgets::setBackgroundColor(c("#E0E0E0")),
   fluidRow(
     column(
