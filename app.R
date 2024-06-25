@@ -40,11 +40,11 @@ ui <- fluidPage(
       )
     )
   ),
-  titlePanel(HTML("Snapshots Of Old<br/>Switzerland")),
+  titlePanel(HTML("Snapshots of old<br/>Switzerland")),
   shinyWidgets::setBackgroundColor(c("#E0E0E0")),
   fluidRow(
     column(
-      p("The Federal Archive for Historic Monuments within Switzerland freely provides thousands of digitalized historic photographs and postcards under a license for public use. This dashboard provides an interface to explore this treasure trove."),
+      p("The Federal Archive for Historic Monuments within Switzerland has made thousands of digitalized historic photographs and postcards available online. These windows into history are fascinating to peruse on their own merits, but all these image also use a license that allows unrestricted reuse by the public. This dashboard provides an accessible interface to explore this treasure trove."),
       p(HTML('<a href="https://opendata.swiss/de/dataset/archiv_photoglob-wehrli">Data Source</a>
         <a href="https://github.com/Blappchri/Dashboard-Historic-Switzerland">Code</a>
         <a href="https://www.linkedin.com/in/christoph-blapp-2659a11bb/">Creator</a>')),
@@ -139,7 +139,7 @@ server <- function(input, output) {
         theme_void()+
         scale_fill_identity()+
         theme(
-          panel.background = element_rect(fill="transparent"),
+          panel.background = element_rect(fill="black"),
           plot.background = element_rect(fill = "transparent", color = NA),
           panel.grid.major = element_blank(),
           panel.grid.minor = element_blank()
